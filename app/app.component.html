@@ -1,0 +1,13 @@
+<div style="text-align:center">
+  <h1>
+    Parent to child communication in component
+
+  </h1>
+  </div>
+
+  <app-parent-to-child [Send]="Text"></app-parent-to-child>
+  
+  
+  <app-parent-to-child (ev)="Text1= $event"></app-parent-to-child>
+
+  {{Text1}}
